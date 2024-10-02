@@ -84,7 +84,12 @@ public class Picture
         
         
     }
-
+    public void amanecer(){
+        moon.makeInvisible();
+        sun.slowMoveVertical(-300);
+        
+    }
+    
     /**
      * Change this picture to black/white display
      */
@@ -98,7 +103,7 @@ public class Picture
             sun.changeColor("black");
         }
     }
-
+    
     /**
      * Change this picture to use color display
      */
