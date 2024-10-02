@@ -16,13 +16,17 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle moon;
+    private Square campo;
+    
+   
+    
+     
     /**
      * Constructor for objects of class Picture
      */
     public Picture()
     {
-
-        
+             
     }
 
     /**
@@ -48,6 +52,14 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
+        
+        campo = new Square();
+        campo.makeVisible();
+        campo.changeColor("green");
+        campo.moveVertical(159);
+        campo.changeSize(600);
+        campo.moveHorizontal(-400);
+        
 
         sun = new Circle();
         sun.changeColor("yellow");
@@ -55,12 +67,22 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        sun.slowMoveVertical(300);
         
         moon = new Circle();
-        moon.makeVisible();
+        moon.moveHorizontal(-200);
         moon.changeColor("magenta");
         moon.changeSize(34);
-        moon.moveHorizontal(-185);
+    
+        
+        moon.makeVisible();
+        moon.slowMoveHorizontal(40);
+        
+        
+        
+        
+        
+        
     }
 
     /**
